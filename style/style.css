@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    background-color: rgb(171, 178, 211);
+}
+
+.main-game {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.genius {
+    display: grid;
+    grid-template-areas: 'verde vermelho' 'amarelo azul';
+    grid-gap: 20px;
+    background-color: rgb(171, 178, 211);
+    border-radius: 100%;
+    width: 400px;
+    height: 400px;
+}
+
+.blue {
+    grid-area: azul;
+    background-color: blue;
+    border: 5px solid #000000;
+    border-bottom-right-radius: 100%;
+    cursor: pointer;
+}
+
+.red {
+    grid-area: vermelho;
+    background-color: red;
+    border: 5px solid #000000;
+    border-top-right-radius: 100%;
+    cursor: pointer;
+}
+
+.yellow {
+    grid-area: amarelo;
+    background-color: yellow;
+    border: 5px solid #000000;
+    border-bottom-left-radius: 100%;
+    cursor: pointer;
+}
+
+.green {
+    grid-area: verde;
+    background-color: green;
+    border: 5px solid #000000;
+    border-top-left-radius: 100%;
+    cursor: pointer;
+}
+
+.selected {
+    opacity: 0.5;
+}
+
+.start-game {
+    width: 200px;
+    height: 50px;
+    background-color: lightgreen;
+    border-radius: 12px;
+    border: 2px solid black;
+    font-family: 'Arial Black', Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.pontos{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.game-over{
+    color: red;
+    font-family: 'Arial Black', Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.status {
+    color: #230085;
+    font-family: 'Arial Black', Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+
+.score {
+    color: #005200;
+    font-family: 'Arial Black', Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+footer span > a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #2685bf;
+}
+
+@media only screen and (max-width: 600px) {
+    .genius {
+        width: 300px;
+        height: 300px;
+    }
+}
